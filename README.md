@@ -1,11 +1,3 @@
-```javac Main.java```
+### Go + JVMTI = ❤
 
-```clang -shared -undefined dynamic_lookup -o agent.so -I /Users/ajedro/.sdkman/candidates/java/current/include/ -I /Users/ajedro/.sdkman/candidates/java/current/include/darwin/ main.cpp```
-
-```java -agentpath:$(pwd)/agent.so Main```
-
-
-```go build -buildmode=c-shared -o agent-go.so```
-
-
-```java -agentpath:$(pwd)/agent-go.so Main```
+This tool provides binding between [JVMTI](https://docs.oracle.com/javase/8/docs/platform/jvmti/jvmti.html) and Golang. The idea is simple: instead of writing C or C++ code we could utilize higher-level language like Go to interact with JVMTI interface.
