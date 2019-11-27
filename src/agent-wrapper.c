@@ -3,7 +3,7 @@
 #include "_cgo_export.h"
 
 JNIEXPORT jint JNICALL Agent_OnLoad(JavaVM *jvm, char *options, void *reserved) {
-    goAgent_onLoad(jvm);
+    goAgent_onLoad(jvm, options);
     return JNI_OK;
 }
 
