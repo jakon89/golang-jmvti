@@ -1,6 +1,5 @@
 package main
 
-//#cgo CFLAGS: -I"/Users/ajedro/.sdkman/candidates/java/current/include/" -I"/Users/ajedro/.sdkman/candidates/java/current/include/darwin/"
 //#include <jvmti.h>
 //#include <agent-wrapper.h>
 import "C"
